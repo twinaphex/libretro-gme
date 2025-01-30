@@ -541,7 +541,7 @@ endif
 include Makefile.common
 
 ifeq (,$(findstring msvc,$(platform)))
-CFLAGS   += -std=c99 -D_DEFAULT_SOURCE
+CFLAGS   += -std=gnu99
 endif
 
 CFLAGS   += -Wall $(INCFLAGS) $(INCFLAGS_PLATFORM)
